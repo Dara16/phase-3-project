@@ -1,4 +1,5 @@
 require 'bundler/setup'
+require 'json'
 
 Bundler.require
 
