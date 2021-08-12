@@ -1,4 +1,4 @@
-#class Tenement < ActiveRecord::Base
-    #has_many :apartments
-    #has_many :occupants, through :apartments
-#end
+class Tenement < ActiveRecord::Base
+    has_many :apartments
+    has_many :occupants, through: :apartments
+end

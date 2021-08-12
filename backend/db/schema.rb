@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_08_12_145143) do
 
   create_table "apartments", force: :cascade do |t|
     t.integer "number"
-    t.string "type"
+    t.string "style"
     t.integer "rent"
     t.integer "tenement_id"
   end
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2021_08_12_145143) do
     t.integer "tenement_id"
   end
 
-  create_table "tenement", force: :cascade do |t|
+  create_table "tenements", force: :cascade do |t|
     t.string "name"
     t.string "address"
   end
